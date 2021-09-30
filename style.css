@@ -92,7 +92,7 @@ body{
 }
 
 .content-btn{
-    margin-top: 5%;
+    /*margin-top: 5%;*/
     padding: 15px 30px;
     text-transform: uppercase;
     color: white;
@@ -114,13 +114,14 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 90px 0px;
+    margin: 70px 0px;
 }
 
  h1{
-    font-size: 350%;
+    font-size: 300%;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
 }
 
 .about-para{
@@ -181,4 +182,551 @@ body{
     width: 40px;
     height: 40px;
     margin: 0px 0px;
+}
+
+hr{
+    width: 60%;
+    text-align: center;
+    margin-bottom: 10px;
+    opacity: 40%;
+}
+
+/* ---- PROJECT-SECTION ---- */
+.project{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 301px 301px 301px 301px 301px;
+    grid-template-rows: 425px 242px;
+    grid-gap: 0.5px;
+    background-color: grey;
+   /* margin: 40px 192px;
+    /*margin-left: 330px; */
+}
+/*
+.grid-container img{
+    height: 500px;
+    margin: 40px 192px;
+    padding: 27px 0px;
+    
+}*/
+
+.grid-item{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 27px 0px;
+}
+
+.grid-item h3{
+     font-size: 30px;
+    font-family: monospace;
+}
+
+.grid-item p{
+    color: grey;
+    font-size: 18px;
+    font-weight: bold;
+    margin : 15px 40px;
+    text-align: left;
+}
+
+.grid-item:hover{
+      background-color: rgb(238, 191, 63);
+}
+
+.section-btn{
+    margin-top: 5%;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.section-btn:hover{
+      background-color: #623b8c;
+      color: #fff;
+}
+
+/* ==== Pricing Table ==== */
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+    flex-direction: column;
+}
+
+.price-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  margin: 20px;
+}
+
+.price-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 20%;
+  margin: 20px 33px;
+}
+
+.price-sec h2{
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bolder;
+  padding: 20px;
+  margin: -20px 0px;
+  color: rgb(36, 36, 36);
+}
+
+.price-sec h3{
+  font-size: medium;
+  font-family: sans-serif;  
+  color: grey;
+  text-transform: uppercase;
+ /* margin: 10px;*/
+  padding: 4px;
+}
+
+.price-sec ul{
+  list-style: none;  
+  font-family: sans-serif;
+  color: rgb(78, 72, 72);
+  font-size: 14px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+}
+
+.price-sec li{
+  padding: 5px;
+}
+
+.vl {
+  border-left: 3px solid grey;
+  height: 245px;
+  margin: 0px;
+}
+
+/* ==== Video-projects ==== */
+
+.video-section{
+  background-color: #623b8c;
+  color: white;
+  height: 90%;
+  width: 100%;
+}
+
+.video-section h1{
+  text-align: center;
+  padding-top: 50px;
+  font-weight: 500;
+}
+
+.videos-frame{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  grid-gap: 20px;
+}
+
+.video p{
+  padding: 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+iframe{
+  width: 450px;
+  height: 300px;
+}
+
+/* ==== TEAM ==== */
+
+#team{
+  margin: 40px;
+}
+
+#team h1{
+ text-align: center;
+}
+
+.team-members{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.member{
+  margin-right: 0.6em;
+  position: relative;
+  background-color: #444;
+  box-shadow: 1px 2px 10px #444;
+  transition: all 0.9s ease;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+
+.social-icons{
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  padding-right: 1.4em;
+  background-color:rebeccapurple;
+  opacity: 0.7;
+  transform: translate(400px);
+  transition: transform 0.8s ease;
+}
+
+.social-icons a{
+  color: white;
+  font-size: 25px;
+  padding: 0.4em;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: lightcoral;
+}
+
+.member:hover .social-icons{
+  transform: translate(0px);
+}
+
+.member:hover img{
+  mix-blend-mode: soft-light;
+  transform: scale(1.2);
+}
+
+.member img{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.avatar{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.team-detail h3{
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.team-detail h4{
+  margin-top: 10px;
+  color: rgb(78, 72, 72);
+  font-weight: bold;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+/* ++++ LIFE IN ZIPPY ++++ */
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+*/
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/*  NESLETTER  */
+
+.news{
+  width: 100%;
+  height: 40vh;
+  background-image: url(img/bg7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.newsletter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.newsletter h1{
+  color: white;
+  margin-top: 70px;
+}
+
+.input-box{
+  display: inline-block;
+  width: 60%;
+  text-align: center;
+  margin: 20px;
+}
+
+.input-box input{
+  padding : 15px 15px;
+  width: 50%;
+  margin-right: 0%;
+  font-size: 20px;
+  color: rgb(53, 49, 49);
+  font-family: monospace;
+}
+
+.input-box button{
+  padding : 20px 20px;
+  font-size: 16px;
+}
+
+/* --------  BLOG ------ */
+
+.blog{
+    display: flex;
+    margin: 50px 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog img{
+    width: 300px;
+    height: 200px;
+    margin: 10px 0px;
+}
+
+.blog h5{
+    margin: 10px;
+    color: grey;
+    font: bold;
+    font-size: 20px;
+}
+
+.blog p{
+    color: rgb(37, 34, 34);
+}
+
+/* ------ CONTACT -----  */
+
+.contact-in{
+    width: auto;
+    height: 70%;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #666;
+    background-color: rgb(238, 191, 63);
+}
+
+.contact-map{
+    width: 50%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form {
+    height: auto;
+    float: right;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
+.contact-form h1{
+    margin-bottom: 10px;
+}
+
+.contact-form-txt{
+    width: 50%;
+    height: 40px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-txt::placeholder{
+    color: #aaa;
+}
+
+.contact-form-textarea {
+    width: 50%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-form-textarea::placeholder{
+    color: #aaa;
+}
+
+.contact-form-btn{
+    width: 50%;
+    border: none;
+    outline: none;
+    background: #8e2de2;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 18px;
+} 
+
+
+
+/*  FOOTER   */
+
+.footer{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.footer-element h3{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.footer-element p{
+  font-family: sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.follow a{
+    font-size: 18px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.follow a:hover{
+    color: rgb(238, 191, 63);
 }
